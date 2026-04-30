@@ -1,0 +1,115 @@
+h1 {
+    padding: 1em 0em 1em 4em;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        padding: 1em 0em 1em 1em;
+    }
+}
+
+h2 {
+    padding: 1em 0em 1em 0em;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    text-align: justify;
+}
+
+.customdiv{
+    padding: 2em 5em 0em 5em;
+    width: 70vw;
+}
+
+.customdiv2{
+    padding: 5em 5em 0em 10em;
+    width: 70vw;
+}
+
+@media (max-width: 600px) {
+    .customdiv {
+        width: 100vw;
+        padding: 1em 0.5em 0 0.5em;
+    }
+    .customdiv2 {
+        width: 100vw;
+        padding: 1em 0.5em 0 0.5em;
+    }
+}
+
+.cvdiv{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+}
+.cvleft {
+    flex: 0.2;
+}
+.cvleft p {
+    text-align: left;
+}
+.cvright {
+    flex: 0.8;
+}
+.cvleft h3, .cvright h3 {
+    font-size: 16pt;
+}
+
+@media (max-width: 600px) {
+    .cvdiv {
+        flex-direction: column;
+    }
+
+    .cvleft, .cvright {
+        flex: 1;
+    }
+}
+
+.navbar-custom {
+    background-color: black;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-toggler-icon {
+    color: white;
+}
+.navbar-custom .navbar-brand {
+    padding-right: 5em;
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: white;
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .nav-item {
+    font-size: 16pt;
+    width: 5em;
+}
+
+.navbar-custom .nav-link:hover {
+    color: rgba(24,137,242,255);
+}
+
+.contact-link{
+    width: 5em;
+    display: flex;
+    justify-content: left;
+    margin: 0.2em 0;
+}
+
+.contact-link img {
+    transition: filter 0.3s ease;
+    width: 30px;
+    height: 30px;
+}
+
+.contact-link img:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(72%) saturate(1600%) hue-rotate(190deg) brightness(95%);
+}
